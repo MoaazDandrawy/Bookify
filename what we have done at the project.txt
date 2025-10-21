@@ -1,0 +1,15 @@
+we add two solution folders 
+src => for the actual source code will be here 
+test => test projects of our system 
+
+it is supposed to make a single folder called entities but for the best practice we will make them based on feature they belong to like apartment folder,booking folder, etc.
+
+it is recommended to make classes sealed if i don't intent to inherit from it, it enhances the performane slightly.
+
+public Guid Id {get; init;}
+دي معناها اني اقدر احط قيمة في البروبيرتي دي عند الانشاء فقط و القيمة دي هتفضل ثابتة مدى الحياة init
+
+why Milan Makes an class Called Entity in abstraction folder?
+- 
+
+He moved Address details to a new record because it is a value object
