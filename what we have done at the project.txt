@@ -9,7 +9,10 @@ it is recommended to make classes sealed if i don't intent to inherit from it, i
 public Guid Id {get; init;}
 دي معناها اني اقدر احط قيمة في البروبيرتي دي عند الانشاء فقط و القيمة دي هتفضل ثابتة مدى الحياة init
 
+Howa 3aml all props of the fields is private setter to prevent changing the value outside the class, if you want to change it haikonn 3andk method l el update.
+
 why Milan Makes an class Called Entity in abstraction folder?
-- 
+- Becuase all entities will have Id and this will be common property between all of them.
+- in future if he want to add feature for all entities he will add it at entity class only
 
 He moved Address details to a new record because it is a value object
