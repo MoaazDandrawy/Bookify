@@ -18,3 +18,7 @@ why Milan Makes an class Called Entity in abstraction folder?
 He moved Address details to a new record because it is a value object
 
 - Domain Events is that "Something has been happend in specific component and i want to notify other components in the system with this" and i will install MediatR.Contracts NugetPackage to implement Interfacrs from it like INotification Interface which will help me to implement publish subscribe pattern to make the event to be subscrible from other to have one or more subscribers.
+
+-We add IUnitOfWork interface 3lshan tkoon ms2ola 3an el saving proccess f el DB.
+
+- 3amlt search f ChatGpt 3an faida el CancellationToken elly f el Reops w f el IUnitOfWork w tal3 3lshan 5atr lw 3awz a3ml cancel l el 3amlia bta3ty lw ana 3awz f el nos.
