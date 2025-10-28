@@ -25,6 +25,10 @@ He moved Address details to a new record because it is a value object consists f
 
 - hikon 3andnda one IUnitOfWork Interface w di hikon fiha kol el methods elly hattklm m3 el DB zay SaveChangesAsync() masln w kol entity hikon 3ndha IRepo el 5as biha.
 
-- f el method elly esmha reserve f el booking class el 3amlia bta3t 7sab el floos bta3t el reserve di 3amlia 7sabia da5l fiha bussines logic f han5liha f service w el service di el application layer will call it 3la ma a3tkd
+- f el method elly esmha reserve f el booking class el 3amlia bta3t 7sab el floos bta3t el reserve di 3amlia 7sabia da5l fiha bussines logic f han5liha f service w el service di el application layer will call it 3la ma a3tkd.
 
 - ai bussines logic f el domain haikon f service 3la tool msh m7taga.
+
+- howa 3aml Error Record eno value object 3lshan hia 7aga mlhash identity w elly mohm 3andy howa el value msh aktr, w 3amlo aslan 3lshan ykon template tahbet l el errors goa el domain 3andy, w 3aml 2 static property aknha a5ta2 gahza 3lshan di hanst3mlha kteer awl wa7da None di btmasl en m3ndish error w el 3amlia nag7t tany 7aga Null value di lw 7asl error 3andy bsbb en fih value gaya b null.
+
+- El Error w el result dool 3lshan hast5dmhom 3momn 3lshan y3abr 3an el state fi kol method hia nag7a wla fashla wla eh blzabt badl el exceptions w el kalam da.
