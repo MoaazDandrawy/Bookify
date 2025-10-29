@@ -32,3 +32,5 @@ He moved Address details to a new record because it is a value object consists f
 - howa 3aml Error Record eno value object 3lshan hia 7aga mlhash identity w elly mohm 3andy howa el value msh aktr, w 3amlo aslan 3lshan ykon template tahbet l el errors goa el domain 3andy, w 3aml 2 static property aknha a5ta2 gahza 3lshan di hanst3mlha kteer awl wa7da None di btmasl en m3ndish error w el 3amlia nag7t tany 7aga Null value di lw 7asl error 3andy bsbb en fih value gaya b null.
 
 - El Error w el result dool 3lshan hast5dmhom 3momn 3lshan y3abr 3an el state fi kol method hia nag7a wla fashla wla eh blzabt badl el exceptions w el kalam da.
+
+-f el result 3amlna noo3 generic 3lshan lw el 3amlia bta3ty rag3t value zay getUserById el user hena lw rg3 hoa da el value lakn 7aga zai saveChanges() mfhash value f hanst5dm el noo3 el 3ady
