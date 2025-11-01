@@ -13,7 +13,7 @@ namespace Bookify.Application.Abstractions.Messaging
     public interface ICommand<TResponse> : IRequest<Result<TResponse>>, IBaseCommand
     {
     }
-
+    // el interface da mohm f el Cross-cutting concerns
     public interface IBaseCommand
     {
 

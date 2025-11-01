@@ -33,4 +33,10 @@ He moved Address details to a new record because it is a value object consists f
 
 - El Error w el result dool 3lshan hast5dmhom 3momn 3lshan y3abr 3an el state fi kol method hia nag7a wla fashla wla eh blzabt badl el exceptions w el kalam da.
 
--f el result 3amlna noo3 generic 3lshan lw el 3amlia bta3ty rag3t value zay getUserById el user hena lw rg3 hoa da el value lakn 7aga zai saveChanges() mfhash value f hanst5dm el noo3 el 3ady
+- f el result 3amlna noo3 generic 3lshan lw el 3amlia bta3ty rag3t value zay getUserById el user hena lw rg3 hoa da el value lakn 7aga zai saveChanges() mfhash value f hanst5dm el noo3 el 3ady
+
+- f el handler lw e7na bntklm 3n query hai implement IQueryHandler w law Command hai implement ICommandHandler w law Domain Event hai implement INotificationHandler
+
+- ai handler bn3mlo internal sealed m3ada el IQueryHandler w el ICommandHandler bikono public
+
+- el events ha3mlhom Handler bas lakn ai 7aga btt3aml m3 el DB ha3mlha Command w Command Handler aw query w queryHandler 3la 7asb.
