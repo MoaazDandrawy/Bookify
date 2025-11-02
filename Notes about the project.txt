@@ -39,4 +39,8 @@ He moved Address details to a new record because it is a value object consists f
 
 - ai handler bn3mlo internal sealed m3ada el IQueryHandler w el ICommandHandler bikono public
 
-- el events ha3mlhom Handler bas lakn ai 7aga btt3aml m3 el DB ha3mlha Command w Command Handler aw query w queryHandler 3la 7asb.
+- ai Command aw Query zai ReserveBookingCommand aw GetBookingQuery bikoon Record
+
+- el events ha3mlhom Handler only lakn ai 7aga btt3aml m3 el DB ha3mlha Command w Command Handler aw query w queryHandler 3la 7asb enta 3awz eh mn el DB.
+
+- hoa 3aml install l dapper mn nuget package manager 3lshan y2dr yktb queries 3la tool f el c# + kaman en el dapper asra3 mn el entity framework lma yigy y3ml query.
