@@ -6,6 +6,7 @@ namespace Bookify.Application.Bookings.GetBooking
     // el class da zai el booking blzabt bas bn5lih b el primative type mn 8er value objects
     // da 3aml akno Dto w fih el props elly hatrg3 mn el DB
     // kol el props hatkoon init setter
+    //lazm t7ot el id bardo mtnsash 3lshan da mawgood f el Entity
     public sealed class BookingResponse
     {
         public Guid Id { get; init; }
