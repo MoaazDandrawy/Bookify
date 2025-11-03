@@ -46,3 +46,7 @@ He moved Address details to a new record because it is a value object consists f
 - hoa 3aml install l dapper mn nuget package manager 3lshan y2dr yktb queries 3la tool f el c# + kaman en el dapper asra3 mn el entity framework lma ygeeb data mn el DB.
 
 - el classes elly zai Booking Response w apartment response dool 3amlin zai el DTo keda w ba7ot fihom el props elly ana 3awzhomn mn el DB bas kolo ykoon primative type.
+
+- wa7da mn el Cross Cutting Concernes howa el Logging w e7na han3ml logging f 7alet el Command bas msh m7taging f el query 3lshan f el query ana 3awzo yrag3 b asra3 tari2a momkna.
+
+- 3lshan el Logging yshta8l lazm y3mlo register f el Pipe Line bta3t el Mediatr 
