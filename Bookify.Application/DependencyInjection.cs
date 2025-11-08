@@ -8,7 +8,8 @@ namespace Bookify.Application
     public static class DependencyInjection
     {
         //faida el method asln eny adeef kol el services bta3t el application layer f el program.cs elly haikon mawgood f el API project
-        //di extension method 3lshan ykon 3andy method esmha AddApplication goa el noo3 elly esmo IServiceCollection elly mawgood asln f el C#
+        //di extension method  3lshan ykon 3andy method esmha AddApplication goa el noo3 elly esmo IServiceCollection elly mawgood asln f el C#
+        //this di 3lshan tkoon extenstion method 3lshan a2dr a3ml builder.Services.AddApplication
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
             services.AddMediatR(configuration =>
@@ -21,7 +22,7 @@ namespace Bookify.Application
                 configuration.AddBehavior(typeof(ValidationBehavior<,>));
             });
             services.AddValidatorsFromAssembly(typeof(DependencyInjection).Assembly);
-            /*hoa katb el line da badl ma y3ml 
+            /*hoa katb el line elly fo2 da badl ma y3ml kda l kol wa7da 
                 services.AddTransient<IValidator<ReserveBookingCommand>, ReserveBookingCommandValidator>();
                 services.AddTransient<IValidator<AnotherCommand>, AnotherCommandValidator>();
             */
