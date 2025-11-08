@@ -1,5 +1,6 @@
 ﻿using Bookify.Application.Abstractions.Behaviors;
 using Bookify.Domain.Bookings;
+using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Bookify.Application
@@ -16,7 +17,14 @@ namespace Bookify.Application
                 // el line da (RegisterServicesFromAssembly) 3lshan ysagl kol el handlers, behaviours automatic 3lshan a2dr ast5dm IMediator.Send() masln mn 8er ma asgl kol handler manual
 
                 configuration.AddOpenBehavior(typeof(LoggingBehavior<,>));//da hena 3lshan kol mara ykoon 3andy Command b ai noo3 request w response hai3dy 3la da
+
+                configuration.AddBehavior(typeof(ValidationBehavior<,>));
             });
+            services.AddValidatorsFromAssembly(typeof(DependencyInjection).Assembly);
+            /*hoa katb el line da badl ma y3ml 
+                services.AddTransient<IValidator<ReserveBookingCommand>, ReserveBookingCommandValidator>();
+                services.AddTransient<IValidator<AnotherCommand>, AnotherCommandValidator>();
+            */
             services.AddTransient<PricingService>();//3amel el noo3 Transient 3lshan kol mara ytlob el service y3ml mnha instance
             return services;
         }

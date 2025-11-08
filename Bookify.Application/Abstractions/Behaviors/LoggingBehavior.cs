@@ -17,7 +17,7 @@ namespace Bookify.Application.Abstractions.Behaviors
         //                                  el request da el Command                    next da el Command Handler 
         public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
         {
-            var name = request.GetType().Name;//bisagl esm el Command zai ReserveBookingCommand using Reflection
+            var name = request.GetType().Name;//bisagl esm el Command zai ReserveBookingCommand using Reflection w reflection 3lshan hoa bi3rf el data type asln f el RunTime mi2drsh y3rfha f el Compile Time
 
             try
             {
