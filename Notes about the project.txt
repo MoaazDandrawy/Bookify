@@ -62,3 +62,7 @@ He moved Address details to a new record because it is a value object consists f
 - f el configuration lw 3andy value object goaha kaza property goa zai Address badiha ownsOne lw 3awzha tkon f nafs el table aw OwnsMany lw 3awznha tkoon f table tany, w law 3andy property wa7da bas goa zai Name aw Description hadiha property
 
 - the best way to implement the repos pattern en ana a3ml interface l kol entity f el domain layer zay IUserRepository masln w fih el 7agat elly ana 3awzha mn el entity w f el infrastructure layer ha3ml generic abstract class zai Repository w da haikon fih el 7agat el moshtrka ben kol el Entities 3lshan a reduce el repeatative code w tab3n ha3ml class l kol entity bi3ml implement l el abstract class w l el interface.
+
+- f el application layer kan 3andna ISqlConnectionFactory w da lazm n3mlo implement f el infrastructure layer.
+
+- el Dapper msh bi3rf yt3aml m3 el DateOnly Type f m7tag handler 3lshan y2dr yfhamo esmo DateOnlyTypeHandler
