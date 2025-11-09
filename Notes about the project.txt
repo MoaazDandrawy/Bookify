@@ -54,3 +54,7 @@ He moved Address details to a new record because it is a value object consists f
 - 3lshan el Logging yshta8l lazm y3mlo register f el Pipe Line bta3t el Mediatr.
 
 - bn3ml add l el application layer as a reference f el infrastructure layer 3lshan el infrastructure btbd2 enha t3ml implement l el interfaces elly fi el application layer.
+
+- f el infrastructure layer han3ml connect l el domain entities b el EF Core 3an tari2 en e7na hn3ml configuration l kol entity elly kant f el domain layer.
+
+- f el Configuration ai value object lazm a2olo ezay y3ml read w write b est5dam HasConversation()

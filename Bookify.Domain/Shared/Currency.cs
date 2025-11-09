@@ -15,7 +15,7 @@
             Eur
         };
         #endregion
-        public Currency FromCode(string code)
+        public static Currency FromCode(string code)
         {
             return All.FirstOrDefault(x => x.Code == code) ?? throw new ApplicationException("this Currrency is invalid!");
         }

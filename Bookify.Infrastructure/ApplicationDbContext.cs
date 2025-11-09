@@ -10,5 +10,11 @@ namespace Bookify.Infrastructure
         {
 
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // da 3lshan el entities configuration yt3mlha apply
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

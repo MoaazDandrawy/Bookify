@@ -42,7 +42,7 @@ namespace Bookify.Domain.Abstractions
         }
         [NotNull]
         //hena enta t2dr twsl l el value only if en el result successed 8er keda mt2drsh twsl l el value
-        public TValue value => IsSuccess ? _value! : throw new InvalidOperationException("The value of a failure result can not be accessed.");
+        public TValue Value => IsSuccess ? _value! : throw new InvalidOperationException("The value of a failure result can not be accessed.");
 
         //di 3lshan y5ali for example Result<Booking> hia hia Booking
         public static implicit operator Result<TValue>(TValue? value) => Create(value);
