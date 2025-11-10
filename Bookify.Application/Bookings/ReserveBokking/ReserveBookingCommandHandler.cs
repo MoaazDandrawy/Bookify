@@ -1,5 +1,6 @@
 ﻿using Bookify.Application.Abstractions.Clock;
 using Bookify.Application.Abstractions.Messaging;
+using Bookify.Application.Exceptions;
 using Bookify.Domain.Abstractions;
 using Bookify.Domain.Apartments;
 using Bookify.Domain.Bookings;
@@ -54,19 +55,27 @@ namespace Bookify.Application.Bookings.ReserveBokking
             {
                 return Result.Failure<Guid>(BookingErrors.Overlap);
             }
+            try
+            {
 
-            var booking = Booking.Reserve(
-                apartment,
-                user.Id,
-                duration,
-                utcNow: _dateTimeProvider.UtcNow,
-                _pricingService);
+                var booking = Booking.Reserve(
+                    apartment,
+                    user.Id,
+                    duration,
+                    utcNow: _dateTimeProvider.UtcNow,
+                    _pricingService);
 
-            _bookingRepository.Add(booking);
+                _bookingRepository.Add(booking);
 
-            await _unitOfWork.SaveChangesAsync(cancellationToken);
+                await _unitOfWork.SaveChangesAsync(cancellationToken);
 
-            return booking.Id;
+                return booking.Id;
+            }
+            catch (ConcurrencyException)
+            {
+                //di hena 7ala ana motwak3 enha t7sal aslan zai en etnen y7gzo sha2a fi nafs el wa2t f ana hatl3 faliure a7san ma ykoon exception
+                return Result.Failure<Guid>(BookingErrors.Overlap);
+            }
         }
     }
 }

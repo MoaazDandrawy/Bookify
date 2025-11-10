@@ -66,3 +66,7 @@ He moved Address details to a new record because it is a value object consists f
 - f el application layer kan 3andna ISqlConnectionFactory w da lazm n3mlo implement f el infrastructure layer.
 
 - el Dapper msh bi3rf yt3aml m3 el DateOnly Type f m7tag handler 3lshan y2dr yfhamo esmo DateOnlyTypeHandler
+
+- el optimistic Concurrency Exception da 3lshan lw ana ba8ir value mo3ina f record w fih user tany bi8air fiha f nafs el wa2t, aw ana ba8ir f booking mo3in masln bas el data elly gatly msh a5r update l el record da.
+
+- 3lshan ykaren w yshoof el data elly 3andy di updated wla la2 ba2olo en fih table lazm tbos 3aleh w tkaren el data elly gatlk b el data elly f el DB 3lshan lw 7ad la72 y7gz 2blk f hast5dm el apartment 3lshan fiha column esmo LastBookedOnUtc.

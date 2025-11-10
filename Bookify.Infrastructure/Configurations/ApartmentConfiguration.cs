@@ -31,6 +31,9 @@ namespace Bookify.Infrastructure.Configurations
                 priceBuilder.Property(money => money.Currency)
                 .HasConversion(currency => currency.Code, code => Currency.FromCode(code));
             });
+
+            // da row version ba2ol fiha eny lazm w ana ba7gz apartment mo3ina lazm akarn ben el data elly ana shaifha w gatly w ben el data elly f el DB f3ln 3lshan lw 7ad 7agz 2ably w sa3tha bikarn 3an tari2 LastBookedOnUtc
+            builder.Property<uint>("Version").IsRowVersion();//shadow property
         }
     }
 }
