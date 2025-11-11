@@ -19,7 +19,7 @@ namespace Bookify.Application
 
                 configuration.AddOpenBehavior(typeof(LoggingBehavior<,>));//da hena 3lshan kol mara ykoon 3andy Command b ai noo3 request w response hai3dy 3la da
 
-                configuration.AddBehavior(typeof(ValidationBehavior<,>));
+                configuration.AddOpenBehavior(typeof(ValidationBehavior<,>));
             });
             services.AddValidatorsFromAssembly(typeof(DependencyInjection).Assembly);
             /*hoa katb el line elly fo2 da badl ma y3ml kda l kol wa7da 
