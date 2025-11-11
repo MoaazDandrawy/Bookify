@@ -18,6 +18,9 @@ namespace Bookify.Infrastructure
 {
     public static class DependencyInjection
     {
+        //faida el method asln eny adeef kol el services bta3t el Infrastructure layer f el program.cs elly haikon mawgood f el API project
+        //di extension method  3lshan ykon 3andy method esmha AddInfrastructure goa el noo3 elly esmo IServiceCollection elly mawgood asln f el C#
+        //this di 3lshan tkoon extenstion method 3lshan a2dr a3ml builder.Services.AddInfrastructure
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddTransient<IDateTimeProvider, DateTimeProvider>();

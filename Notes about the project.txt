@@ -70,3 +70,9 @@ He moved Address details to a new record because it is a value object consists f
 - el optimistic Concurrency Exception da 3lshan lw ana ba8ir value mo3ina f record w fih user tany bi8air fiha f nafs el wa2t, aw ana ba8ir f booking mo3in masln bas el data elly gatly msh a5r update l el record da.
 
 - 3lshan ykaren w yshoof el data elly 3andy di updated wla la2 ba2olo en fih table lazm tbos 3aleh w tkaren el data elly gatlk b el data elly f el DB 3lshan lw 7ad la72 y7gz 2blk f hast5dm el apartment 3lshan fiha column esmo LastBookedOnUtc.
+
+- el presentation layer di el entry point bta3t el system bta3na elly momkn tkoon restful API aw gRPC System aw Single page Application.
+
+- elmohma el asasya l el presentation layer enha ta5od el requests w t3mlha package up into Command aw Queries w tb3thom l el Application layer 3an tari2 MediatR Pattern.
+
+- eldocker da 3lshan ana masln 3la el ghaz bta3y 3lshan a3ml run l el app bta3y m7tag anazl .Net 8.0 w MSSQL masln w lw a5dt nafs el app 3la ghaz tany m3lhosh el 7agat di msh haisht8l f ana b est5dam el docker ba3ml container kda fih kol el taghizat elly t5aly el bernamg da ysht8l 3la ai ghaz tany
