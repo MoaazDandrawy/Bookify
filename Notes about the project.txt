@@ -76,3 +76,9 @@ He moved Address details to a new record because it is a value object consists f
 - elmohma el asasya l el presentation layer enha ta5od el requests w t3mlha package up into Command aw Queries w tb3thom l el Application layer 3an tari2 MediatR Pattern.
 
 - eldocker da 3lshan ana masln 3la el ghaz bta3y 3lshan a3ml run l el app bta3y m7tag anazl .Net 8.0 w MSSQL masln w lw a5dt nafs el app 3la ghaz tany m3lhosh el 7agat di msh haisht8l f ana b est5dam el docker ba3ml container kda fih kol el taghizat elly t5aly el bernamg da ysht8l 3la ai ghaz tany.
+
+- w ana ba3ml add-migration lazm a5aly el startup project mn foo2 ykoon el API bta3y (Bookify.Api) w mn ta7t f el package manager console a5lih el infrastructure (Bookify.Infrastructure) w lazm a3ml parameterless constructor l el entities kolha.
+
+- lma a3ml add-migration awl mara hla2y en gaily error "No suitable constructor was found for entity type" w da bsbb en el constructor elly mawgood fih data types complex zay el value object w EF msh 3arf y3ml bind f lazm a3ml prameterless constructor.
+
+- el postgresql bt support el collections f el DB zay el List of aminities elly f apartment TBL

@@ -1,5 +1,6 @@
 using Bookify.Application;
 using Bookify.Infrastructure;
+using Bookify.Api.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +21,12 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
+    // Apply migrations automatically in development environment only
+    // w ana ba3ml add-migration lazm a5aly el startup project mn foo2 ykoon el API bta3y (Bookify.Api) w mn ta7t f el package manager console a5lih el infrastructure (Bookify.Infrastructure) w lazm a3ml parameterless constructor l el entities kolha.
+    app.ApplyMigrations();
+
+    app.SeedData();
 }
 
 app.UseHttpsRedirection();
