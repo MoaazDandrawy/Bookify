@@ -7,8 +7,14 @@ services:
     build:
       context: .
       dockerfile: Bookify.Api/Dockerfile
+    environment:
+    - ASPNETCORE_URLS=http://0.0.0.0:8080
     depends_on:
       - bookify-db
+    ports:
+        - "9500:8080"
+
+    # restart: on-failure
 
   bookify-db:
       image: postgres:latest
@@ -22,3 +28,16 @@ services:
         - ./.containers/database:/var/lib/postgresql/data/pgdata
       ports:
         - 5432:5432
+        
+  bookify-idp:
+    image: quay.io/keycloak/keycloak:latest
+    container_name: Bookify.Identity
+    command: start-dev --import-realm
+    environment:
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+    volumes:
+      - ./.containers/identity:/opt/keycloak/data
+      - ./.files/bookify-realm-export.json:/opt/keycloak/data/import/realm.json
+    ports:
+      - 18080:8080

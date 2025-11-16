@@ -26,12 +26,16 @@ if (app.Environment.IsDevelopment())
     // w ana ba3ml add-migration lazm a5aly el startup project mn foo2 ykoon el API bta3y (Bookify.Api) w mn ta7t f el package manager console a5lih el infrastructure (Bookify.Infrastructure) w lazm a3ml parameterless constructor l el entities kolha.
     app.ApplyMigrations();
 
-    app.SeedData();
+    //app.SeedData();
 }
 
 app.UseHttpsRedirection();
 
 //app.UseAuthorization(); //hnb2a n3ml e7na keyCloak
+
+app.UseCustomExceptionHandler();
+
+app.UseCors("AllowAll");
 
 app.MapControllers();
 

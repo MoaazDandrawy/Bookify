@@ -82,3 +82,5 @@ He moved Address details to a new record because it is a value object consists f
 - lma a3ml add-migration awl mara hla2y en gaily error "No suitable constructor was found for entity type" w da bsbb en el constructor elly mawgood fih data types complex zay el value object w EF msh 3arf y3ml bind f lazm a3ml prameterless constructor.
 
 - el postgresql bt support el collections f el DB zay el List of aminities elly f apartment TBL
+
+- ana est5dmt el docker w 7asl m3aia moshkla w hia en kan fih kaza port bi listen 3la nafs el APi bta3na f ro7t l el docker-compose w 7atet environment bta3tna 8080 w f el launchsettings 3amlt el publishAllPorts b false w f el docker file 3amlt comment l Expose 8081 3lshan y listen 3la 8080 bas w mtnsa4 enk t3ml check 3la el http w https.

@@ -1,8 +1,10 @@
-﻿using Bookify.Infrastructure;
+﻿using Bookify.Api.Middleware;
+using Bookify.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
 namespace Bookify.Api.Extensions
 {
+    //da class haikon fih kol el extension methods elly 3ayz a3mlha 3la IApplicationBuilder
     public static class ApplicationBuilderExtensions
     {
         //el method di m3mola 3lshan el local development purposes bs ma tkonsh feha 3nd el production environment 
@@ -12,6 +14,11 @@ namespace Bookify.Api.Extensions
             using var scope = app.ApplicationServices.CreateScope();
             using var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
             dbContext.Database.Migrate();   
+        }
+
+        public static void UseCustomExceptionHandler(this IApplicationBuilder app)
+        {
+            app.UseMiddleware<ExceptionHandlingMiddleware>();
         }
     }
 }
