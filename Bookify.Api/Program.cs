@@ -31,11 +31,14 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-//app.UseAuthorization(); //hnb2a n3ml e7na keyCloak
 
 app.UseCustomExceptionHandler();
 
 app.UseCors("AllowAll");
+
+app.UseAuthentication();
+
+app.UseAuthorization();
 
 app.MapControllers();
 

@@ -84,3 +84,7 @@ He moved Address details to a new record because it is a value object consists f
 - el postgresql bt support el collections f el DB zay el List of aminities elly f apartment TBL
 
 - ana est5dmt el docker w 7asl m3aia moshkla w hia en kan fih kaza port bi listen 3la nafs el APi bta3na f ro7t l el docker-compose w 7atet environment bta3tna 8080 w f el launchsettings 3amlt el publishAllPorts b false w f el docker file 3amlt comment l Expose 8081 3lshan y listen 3la 8080 bas w mtnsa4 enk t3ml check 3la el http w https.
+
+- f el keycloak identity hoa 3aml file bookify-realm-export.json 3lshan y3ml realm hnak 3la tool bas bi7sl error w 3amlt mount l folder 2blih 3lshan kda 3mltlo comment.
+
+- f el part bta3 el Authentication (3aml zai bwabt taftish el metro) hoa ra7 3aml app.UseAuthentication(); w app.UseAuthorization(); f el api layer 3lshan y2ol l el request enk hat3dy 3la el bwaba di w fih taftish tayb 3lshan a2ol el tari2a bta3t el taftish htkoon 3amla ezay w men elly y3dy w min la2 hairoo7 y3ml services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(); f el dependency injection bta3 el infrastructure layer b3d ma ynzl nuget package.
