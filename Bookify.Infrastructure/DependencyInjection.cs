@@ -46,7 +46,8 @@ namespace Bookify.Infrastructure
             SqlMapper.AddTypeHandler(new DateOnlyTypeHandler());
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
-
+            
+            //f el appsettings elly f el Api layer bn5azn el Authentication Options w bnst5dmha hna
             services.Configure<AuthenticationOptions>(configuration.GetSection("Authentication"));
 
             services.ConfigureOptions<JwtBearerOptionsSetup>();
